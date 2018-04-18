@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 14</title>
+  </head>
+  <body>
+    <script>
+    alfa = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+            'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+            function nieuwewoorden() {
+              for(y = 0; y< 3; y++){
+                for (x = 0; x < 5; x++) {
+                  var text =  Math.floor(Math.random()*25) + 0;
+                  document.write(alfa[text]);
+                }
+                document.write(' ');
+              }
+            }
+            nieuwewoorden();
+    </script>
+  </body>
+</html>
