@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 15</title>
+  </head>
+  <body>
+    <script>
+    // dit is de normale tekst
+      tekst = 'Dit document is een lang document maar ook een simpel document';
+      document.write(tekst);
+      //dit is de functie
+      function vervangen(tekst, woord, nieuwewoorden) {
+        document.write('<br>');
+        // je haalt tekst uit elkaar en en vervangt een woord. Met join geef je aan welk nieuw woord je wilt vervangen
+        return tekst.split(woord).join(nieuwewoorden);
+      }
+      //hier voer je de functie uit en geef je aan welke tekst, welk woord je weg wilt en welk woord je wilt vervangen
+      resultaat = vervangen(tekst, 'document', 'script');
+      document.write(resultaat);
+
+    </script>
+  </body>
+</html>
